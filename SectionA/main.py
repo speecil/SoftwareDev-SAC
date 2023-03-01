@@ -5,17 +5,17 @@ import data
 points = 0
 questions = []
 correct = []
-uservalidated = False
+userValidated = False
 
 # Validation for user info
-while not uservalidated:
+while not userValidated:
     user = data.Questions(str(input("What is your first name: ")), input("What is your age: "))
     if not user.name.isalpha() or user.name == "":
         print('Please enter a valid name')
     elif not user.age.isnumeric() or user.age == "":
         print('Please enter a valid age')
     else:
-        uservalidated = True
+        userValidated = True
 
 # Saves the score to the txt file
 def saveScore():
