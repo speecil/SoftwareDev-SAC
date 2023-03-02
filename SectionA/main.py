@@ -73,6 +73,6 @@ for i in range(10):
 
 # Prompt to ask the user if the score should be saved
 shouldSave = input("Would you like to save your score? [y,n]")
-if shouldSave:
+if shouldSave == 'y':
     # Run the saveScore function
     saveScore()
